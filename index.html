@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" 
+    integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" 
+    crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Accueil</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Profil</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Equipe</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Se déconnecter</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="toggle" onclick="toggleMenu()"></div>
+
+    <script type="text/javascript">
+        function toggleMenu()
+        {
+            let nav = document.querySelector('.nav')
+            let toggle = document.querySelector('.toggle')
+            nav.classList.toggle('active')
+            toggle.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
